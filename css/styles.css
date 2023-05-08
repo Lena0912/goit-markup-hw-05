@@ -174,7 +174,7 @@ color: var(--accent-color);
         height: 56px;
         border: none;
         margin: 0 auto;
-        transition: color var(--transition-duration-and-functoin);
+        transition: background-color var(--transition-duration-and-functoin);
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -278,6 +278,7 @@ color: var(--text-color);
 .team-icon-items {
     width: 40px;
     height: 40px;
+    transition: background-color var(--transition-duration-and-functoin);
 }
 .team-icon-link {
     width: 100%;
@@ -316,6 +317,7 @@ color: var(--text-color);
 .customers-list-item {
     width: calc((100% - 120px) / 6);
     height: 88px;
+    transition: border-color var(--transition-duration-and-functoin), color var(--transition-duration-and-functoin);
 }
 
 .customers {
@@ -327,7 +329,7 @@ color: var(--text-color);
     align-items: center;
     justify-content: center;
     color: var(--light-slate);
-    transition: background-color var(--transition-duration-and-functoin);
+    
 }
 
 .customers:hover,
@@ -388,6 +390,7 @@ color: var(--text-color);
 .footer-items {
     width: 40px;
     height: 40px;
+    transition: background-color var(--transition-duration-and-functoin), color var(--transition-duration-and-functoin);
 }
 .social-icons {
     width: 100%;
@@ -397,7 +400,7 @@ color: var(--text-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color var(--transition-duration-and-functoin), color var(--transition-duration-and-functoin);
+    
 }
 .social-icons:hover,
 .social-icons:focus {
@@ -464,10 +467,14 @@ background-color: var(--green);
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+    transition: box-shadow var(--transition-duration-and-functoin);
 }   
 .flex-element-list {     
     width: calc((100% - 48px) / 3); 
     display: block;
+}
+.button-list {
+    transition: color var(--transition-duration-and-functoin), background-color var(--transition-duration-and-functoin), border-color var(--transition-duration-and-functoin), box-shadow var(--transition-duration-and-functoin);
 }
 
 .flex-element-link:hover,
@@ -516,10 +523,7 @@ background-color: var(--green);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--light-mode);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 40px 32px;
 }
 .flex-img-wrapper {
     position: relative;
@@ -540,7 +544,7 @@ left: 0;
 width: 100%;
 height: 100%;
 background-color: rgba(46, 47, 66, 0.4);
-transition: opasity var(--transition-duration-and-functoin), visibility var(--transition-duration-and-functoin);
+transition: opacity var(--transition-duration-and-functoin), visibility var(--transition-duration-and-functoin);
 }
 .backdrop.is-hidden {
 opacity: 0;
@@ -555,15 +559,16 @@ transform: translate(-50%, -50%);
 width: 408px;
 min-height: 576px;
 background-color: var(--dairy);
-
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn {
 position: absolute;
 top: 24px;
 right: 24px;
-background-color: var(--accent-button) ;
+background-color: var(--accent-button);
 border: 1px solid rgba(0, 0, 0, 0.1);
-/* fill: var(--main-color) ; */
 width: 24px;
 height: 24px;
 border-radius: 50%;
@@ -571,10 +576,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 0;
-border-radius: 4px;
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-transition: border var(--transition-duration-and-functoin), background-color var(--transition-duration-and-functoin) ;
+transition: border var(--transition-duration-and-functoin), background-color var(--transition-duration-and-functoin);
 }
 
 .modal-close-btn:hover,
