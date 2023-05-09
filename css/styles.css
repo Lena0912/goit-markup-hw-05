@@ -96,8 +96,8 @@ padding: 120px 0;
     left: 0;
     width: 100%;
     height: 4px;
-    border-radius: 2px;
-    
+    border-radius: 2px;  
+ 
 }
 .menu-link.active::after {
 background-color: var(--accent-color);
@@ -186,11 +186,8 @@ color: var(--accent-color);
         background: var(--primery-brend);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
-        cursor: pointer;        
-        /* flex-direction: row;
-        align-items: center; */
+        cursor: pointer;       
         padding: 16px 32px;
-        /* gap: 10px; */        
         display: block;
         min-width: 169px;
         height: 56px;
@@ -352,7 +349,7 @@ color: var(--text-color);
     align-items: center;
     justify-content: center;
     color: var(--light-slate);
-    transition: border-color var(--transition-duration-and-functoin);
+    
 }
 
 .customers:hover,
@@ -363,6 +360,7 @@ color: var(--text-color);
 
 .customers-icons {
     fill: currentColor;
+    transition: border-color var(--transition-duration-and-functoin);
 }
 /* Footer */
 .footer { 
@@ -584,7 +582,8 @@ min-height: 576px;
 background-color: var(--dairy);
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: transform var(--transition-duration-and-functoin);
+transition: border var(--transition-duration-and-functoin), background-color var(--transition-duration-and-functoin);
 }
 .modal-close-btn {
 position: absolute;
