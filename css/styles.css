@@ -479,6 +479,9 @@ background-color: var(--green);
     overflow: hidden;
 }
 /* Portfolio */
+.button-items {
+    transition: color var(--transition-duration-and-functoin), background-color var(--transition-duration-and-functoin), border-color var(--transition-duration-and-functoin), box-shadow var(--transition-duration-and-functoin);
+}
 
 .section-portfolio {
     padding: 96px 0 120px;
@@ -496,6 +499,9 @@ background-color: var(--green);
 }
 .button-list {
     transition: color var(--transition-duration-and-functoin), background-color var(--transition-duration-and-functoin), border-color var(--transition-duration-and-functoin), box-shadow var(--transition-duration-and-functoin);
+}
+.flex-element-link {
+    transition: box-shadow var(--transition-duration-and-functoin);
 }
 
 .flex-element-link:hover,
