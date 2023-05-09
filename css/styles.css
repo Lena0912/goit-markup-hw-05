@@ -86,12 +86,13 @@ padding: 120px 0;
 }
 .menu-item {
     position: relative;
+    color: var(--accent-color);
 }
 .menu-link::after {
     content: '';
     position: absolute;
     display: block;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     height: 4px;
@@ -113,6 +114,7 @@ color: var(--accent-color);
 .address-menu {
     display: flex;
     gap: 40px;
+    transition: color var(--transition-duration-and-functoin);
 
 }
 .nav-link-contacts {           
@@ -298,7 +300,7 @@ color: var(--text-color);
 .team-icon-items {
     width: 40px;
     height: 40px;
-    transition: background-color var(--transition-duration-and-functoin);
+    
 }
 .team-icon-link {
     width: 100%;
@@ -309,6 +311,7 @@ color: var(--text-color);
     align-items: center;
     justify-content: center; 
     transition: color var(--transition-duration-and-functoin);
+    transition: background-color var(--transition-duration-and-functoin);
 }
 .team-icon-link:hover,
 .team-icon-link:focus {
@@ -337,7 +340,7 @@ color: var(--text-color);
 .customers-list-item {
     width: calc((100% - 120px) / 6);
     height: 88px;
-    transition: border-color var(--transition-duration-and-functoin), color var(--transition-duration-and-functoin);
+    
 }
 
 .customers {
@@ -349,7 +352,7 @@ color: var(--text-color);
     align-items: center;
     justify-content: center;
     color: var(--light-slate);
-    
+    transition: border-color var(--transition-duration-and-functoin);
 }
 
 .customers:hover,
@@ -410,7 +413,7 @@ color: var(--text-color);
 .footer-items {
     width: 40px;
     height: 40px;
-    transition: background-color var(--transition-duration-and-functoin), color var(--transition-duration-and-functoin);
+    
 }
 .social-icons {
     width: 100%;
@@ -420,7 +423,7 @@ color: var(--text-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    transition: background-color var(--transition-duration-and-functoin);
 }
 .social-icons:hover,
 .social-icons:focus {
