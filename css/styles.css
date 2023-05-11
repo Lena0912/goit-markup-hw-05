@@ -12,7 +12,7 @@
     --indent: 24px;
     --items: 4; 
     --transition-duration-and-functoin: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    };
+    }
 
 
 h1, h2, h3, h4, h5, p {
@@ -83,7 +83,7 @@ padding: 120px 0;
         color: var(--main-color);
         display: block;
         padding: 24px 0;
-        color: var(--accent-color);
+        
         transition: color var(--transition-duration-and-functoin);
 }
 .active {
@@ -546,9 +546,7 @@ background-color: var(--green);
     overflow: auto;
     transform: translate(0, 100%);
     transition: transform var(--transition-duration-and-functoin);
-    background-color: var(--primery-brend);
-    font-style: normal;
-    font-weight: 400;
+    background-color: var(--primery-brend);    
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
